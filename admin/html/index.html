@@ -5,15 +5,30 @@
 	<meta name = "viewport" content= "width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
 	<title>Multiple User Account Creation</title>
 	<!-- LOCALHOST STYLE -->
-	<!-- <link rel="stylesheet" href="../css/styles.css"> -->
+	<link rel="stylesheet" href="../css/styles.css">
+	<link rel="stylesheet" href="../css/modal.css">
 	<!-- ARCADIER PLUGIN STYLE -->
 	<link rel="stylesheet" href="css/styles.css">
+	<link rel="stylesheet" href="css/modal.css">
 	<!-- <link href='https://fonts.googleapis.com/css?family=Oswald:400,300,700' rel='stylesheet' type='text/css'> -->
 </head>
 <body>
 	
 	<h2>CREATE MULTIPLE USER ACCOUNT</h2>
-	<label class="howto">How to use it?</label>
+	<label id="myBtn" class="howto" onclick="">How to use it?</label>
+
+	<!-- Trigger/Open The Modal -->
+	<!-- <button id="myBtn">Open Modal</button> -->
+	<!-- The Modal -->
+	<div id="myModal" class="modal">
+	
+		<!-- Modal content -->
+		<div class="modal-content">
+			<span class="close">&times;</span>
+			<p>Some text in the Modal..</p>
+		</div>
+	</div>
+
 	<div id="AddNewUser">
 		<label class="lbl_un" title="">Email</label>
 		<label class="lbl_pwd" title="">Password</label>
@@ -42,14 +57,15 @@
 				</tr>
 			</thead>
 			<tbody>
-				
+	
 			</tbody>
-			</table>
+		</table>
 	</div>
 	<br><br><br>
 	<button class="submitAccounts" onclick="CreateUsersAccount()">Create Account(s)</button>
 	<!-- LOCALHOST SCRIPTS -->
-	<!-- <script src="../scripts/scripts.js"></script> -->
+	<script src="../scripts/scripts.js"></script>
+	<script src="../scripts/displayModal.js"></script>
 	<!-- ARCADIER PLUGIN SCRIPTS -->
 	<script src="scripts/scripts.js"></script>
 </body>
