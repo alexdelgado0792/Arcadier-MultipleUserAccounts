@@ -1,0 +1,35 @@
+.lbl_un{
+    padding-left: 0px; 
+}
+
+.lbl_pwd{
+    padding-left: 130px;
+}
+
+.submitAccounts{
+    background-color: lightblue;
+}
+
+.addToList{
+    background-color: lightblue;
+}
+
+
+table{
+    border-radius: 5px;
+    border: 1px solid black;
+}
+
+th,td{
+    width: 200px;
+    text-align: center;
+    border: 1px solid black;
+}
+
+.hidetext{
+    -webkit-text-security: disc;
+}
+
+.hidetext:hover{
+    -webkit-text-security: none;
+}

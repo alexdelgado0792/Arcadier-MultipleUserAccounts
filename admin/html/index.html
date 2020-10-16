@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang = "en">
+<head>
+	<meta charset="UTF-8">
+	<meta name = "viewport" content= "width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<title>Multiple User Account Creation</title>
+	<!-- LOCALHOST STYLE -->
+	<!-- <link rel="stylesheet" href="../css/styles.css"> -->
+	<!-- ARCADIER PLUGIN STYLE -->
+	<link rel="stylesheet" href="css/styles.css">
+	<!-- <link href='https://fonts.googleapis.com/css?family=Oswald:400,300,700' rel='stylesheet' type='text/css'> -->
+</head>
+<body>
+	
+	<h2>CREATE MULTIPLE USER ACCOUNT</h2>
+	<div id="AddNewUser">
+		<label class="lbl_un" title="">Email</label>
+		<label class="lbl_pwd" title="">Password</label>
+		<br>
+		<input id="username" placeholder="User Email"></input>
+		<input id="password" type="password" placeholder="Password"></input>
+		<select id="role"  placeholder="Roles">
+			<option value="" selected disabled>Choose a role</option>
+			<option value="Admin" hidden>Admin</option>
+			<option value="Merchant">Merchant</option>
+			<option value="User">User</option>
+		</select>
+		<button class="addToList" onclick="addUserToList()">Add to list</button>
+	</div>
+
+	<br><br><br>
+
+	<div id="UserTable">
+		<table id="myTable">
+			<thead>
+				<tr>
+					<th>UserName</th>
+					<th>Password</th>
+					<th>Role</th>
+					<th>Action</th>
+				</tr>
+			</thead>
+			<tbody>
+				
+			</tbody>
+			</table>
+	</div>
+	<br><br><br>
+	<button class="submitAccounts" onclick="CreateUsersAccount()">Create Account(s)</button>
+	<!-- LOCALHOST SCRIPTS -->
+	<!-- <script src="../scripts/scripts.js"></script> -->
+	<!-- ARCADIER PLUGIN SCRIPTS -->
+	<script src="scripts/scripts.js"></script>
+</body>
+</html>
