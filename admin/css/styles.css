@@ -33,3 +33,8 @@ th,td{
 .hidetext:hover{
     -webkit-text-security: none;
 }
+
+.howto{
+    color: blue;
+    padding-left: 450px;
+}
