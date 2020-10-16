@@ -37,4 +37,6 @@ The file structure of each Plug-in's source code:
 Email Notification Template
 
 ![](readme-images/emailTemplate.png)
+
+
 Version 1.0.0
