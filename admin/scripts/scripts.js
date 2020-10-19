@@ -176,6 +176,3 @@ function ProcessCsvFile(){
         console.log(reader.result);
     }
 }
-
-//TODO: borrar archivo cuando dar crear
-//      borrar archivo para subir otro?
