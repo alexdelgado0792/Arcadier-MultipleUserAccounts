@@ -152,7 +152,6 @@ function ProcessCsvFile(){
 
         reader.onload = function (e) {
             var rows = e.target.result.split("\n");
-            console.log(rows);
 
             for (let index = 0; index < rows.length; index++) {
 
