@@ -8,8 +8,8 @@
 	<link rel="stylesheet" href="../css/styles.css">
 	<link rel="stylesheet" href="../css/modal.css">
 	<!-- ARCADIER PLUGIN STYLE -->
-	<link rel="stylesheet" href="css/styles.css">
-	<link rel="stylesheet" href="css/modal.css">
+	<!-- <link rel="stylesheet" href="css/styles.css">
+	<link rel="stylesheet" href="css/modal.css"> -->
 	<!-- <link href='https://fonts.googleapis.com/css?family=Oswald:400,300,700' rel='stylesheet' type='text/css'> -->
 </head>
 <body>
@@ -47,7 +47,7 @@
 			<option value="User">User</option>
 		</select>
 		<button class="addToList" onclick="addUserToList()">Add to list</button>
-		<button class="addFromCsv" onclick="">Import CSV</button>
+		<input type="file" id="file-selector" accept=".csv" class="addFromCsv" onchange="ProcessCsvFile()"></input>
 	</div>
 
 	<br><br><br>
@@ -74,7 +74,7 @@
 	<script src="../scripts/scripts.js"></script>
 	<script src="../scripts/displayModal.js"></script>
 	<!-- ARCADIER PLUGIN SCRIPTS -->
-	<script src="scripts/scripts.js"></script>
-	<script src="scripts/displayModal.js"></script>
+	<!-- <script src="scripts/scripts.js"></script>
+	<script src="scripts/displayModal.js"></script> -->
 </body>
 </html>

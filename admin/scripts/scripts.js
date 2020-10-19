@@ -143,3 +143,40 @@ function CleanTable(){
         table.deleteRow(i);
     }
 }
+
+function ProcessCsvFile(){
+    var  IsAnyFile = document.getElementById("file-selector").files.length;
+
+    if (IsAnyFile > 0) {
+        var reader = new FileReader();
+
+        reader.onload = function (e) {
+            var rows = e.target.result.split("\n");
+            console.log(rows);
+
+            for (let index = 0; index < rows.length; index++) {
+
+                if (rows[index].length > 0) {
+                    var data = rows[index].split(",");
+
+                    var newRow = document.createElement('tr');
+                    newRow.innerHTML =
+                        `<td>${data[0]}</td>` +
+                        `<td class="hidetext">${data[1]}</td>` +
+                        `<td>${data[2]}</td>` +
+                        '<td><input type="button" value="Delete" onclick="deleteRow(this.parentNode.parentNode.rowIndex)"></td>';
+
+                    var trows = document.getElementById('myTable').getElementsByTagName('tbody')[0];
+                    trows.appendChild(newRow);
+
+                }
+            }
+        }
+
+        reader.readAsText(document.getElementById("file-selector").files[0]);
+        console.log(reader.result);
+    }
+}
+
+//TODO: borrar archivo cuando dar crear
+//      borrar archivo para subir otro?
