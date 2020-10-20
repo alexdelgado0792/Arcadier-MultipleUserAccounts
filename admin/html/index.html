@@ -5,16 +5,16 @@
 	<meta name = "viewport" content= "width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
 	<title>Multiple User Account Creation</title>
 	<!-- LOCALHOST STYLE -->
-	<link rel="stylesheet" href="../css/styles.css">
-	<link rel="stylesheet" href="../css/modal.css">
+	<!-- <link rel="stylesheet" href="../css/styles.css">
+	<link rel="stylesheet" href="../css/modal.css"> -->
 	<!-- ARCADIER PLUGIN STYLE -->
-	<!-- <link rel="stylesheet" href="css/styles.css">
-	<link rel="stylesheet" href="css/modal.css"> -->
+	<link rel="stylesheet" href="css/styles.css">
+	<link rel="stylesheet" href="css/modal.css">
 	<!-- <link href='https://fonts.googleapis.com/css?family=Oswald:400,300,700' rel='stylesheet' type='text/css'> -->
 </head>
 <body>
 	
-<div class="container">
+<div class="maincontainer">
 	<label id="modalHowTo" class="howto">How to use it?</label>
 
 	<!-- Modal -->
@@ -35,14 +35,14 @@
 			<br/>
 			<p>Using a CSV file: </p>
 			<ol>
-				<li>Insert User email.</li>
-				<li>Create User temporary Password.</li>
-				<li>Choose User Role (Merchant or User/Buyer).</li>
-				<li>Click Add in order to add it to the list</li>
-				<li>Repeat any times that is necessary.</li>
-				<li>Click Create in order to execute the user creation (notification is send to all user email).</li>
-				
+				<li>Click on Choose File.</li>
+				<li>The File must be .csv extension.</li>
+				<li>CSV file content must be in this order: UserEmail,Password,Role (Merchant/User)</li>
 			</ol> 
+			<p>Example:</p>
+			<p>user1@email.com,pwd,Merchant<br/>
+			   user2@email.com,pwd,User
+			</p>
 			<br/><br/>
 			<p>Any problem email to <a href="mailto:example@email.com">Support Team</a></p>
 		</div>
@@ -83,10 +83,10 @@
 	<button class="submitAccounts" onclick="CreateUsersAccount()">Create Account(s)</button>
 </div>
 	<!-- LOCALHOST SCRIPTS -->
-	<script src="../scripts/scripts.js"></script>
-	<script src="../scripts/displayModal.js"></script>
+	<!-- <script src="../scripts/scripts.js"></script>
+	<script src="../scripts/displayModal.js"></script> -->
 	<!-- ARCADIER PLUGIN SCRIPTS -->
-	<!-- <script src="scripts/scripts.js"></script>
-	<script src="scripts/displayModal.js"></script> -->
+	<script src="scripts/scripts.js"></script>
+	<script src="scripts/displayModal.js"></script>
 </body>
 </html>
