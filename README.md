@@ -39,4 +39,4 @@ Email Notification Template
 ![](readme-images/emailTemplate.png)
 
 
-Version 1.0.0
+Version 2.0.0
