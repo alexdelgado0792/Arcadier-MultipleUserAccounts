@@ -16,6 +16,7 @@
 
 .addFromCsv{
     color: black;
+    padding-top: 10px;
 }
 
 table{
@@ -42,9 +43,6 @@ th,td{
     padding-left: 450px;
 }
 
-.container{
-    border-color: white;
-    border-width: 20px;
-    border-style: solid;
+.maincontainer{
     margin-left: 50px;
 }
